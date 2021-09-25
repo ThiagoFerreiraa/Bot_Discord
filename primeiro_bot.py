@@ -29,6 +29,11 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
+@bot.event 
+async def on_reaction_add(reaction,user):
+    print(reaction.emoji)
+
+
 @bot.command(name="oi")
 async def send_hellow(ctx):
     name = ctx.author.name
