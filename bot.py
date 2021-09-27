@@ -7,7 +7,7 @@ bot = commands.Bot("!")
 
 def load_cogs(bot):
     bot.load_extension("meneger")
-    bot.load_extension("tasks.dates")
+    # bot.load_extension("tasks.dates")
 
     for file in os.listdir("commands"):
         if file.endswith(".py"):
